@@ -22,44 +22,46 @@
     <h1>Class 1 Lab</h1>
     <p style="background:black;color:white;">
       What is your first name? 
-      <script>document.write (firstName);</script>
+      <!-- <script>document.write (firstName);</script> -->
     </p>
     <p style="background:#310202;color:#ffe1a1;">What is your second name? 
-      <script>document.write (secondName);</script>
+      <!-- <script>document.write (secondName);</script> -->
     </p>
     <p style="background:#0e2e06;color:#c3f8fc;">
       What is your street's name?
-      <script>document.write (streetName);</script>
+      <!-- <script>document.write (streetName);</script> -->
     </p>
     <p style="background:#16002b;color:#ffb5ff;">
       What is your age in years?
-      <script>document.write (secondName);</script>
+      <!-- <script>document.write (ageNum);</script> -->
     </p>
   </main>
   <script>
-    function getScouse() {
+
     let firstName = prompt ("What is your first name?");
     console.log("The user's first name is " + firstName);
 
-    let lastName = prompt ("What is your first name?");
+    let lastName = prompt ("What is your second name?");
     console.log("The user's full name is " + firstName + " " + lastName);
 
     let streetName = prompt ("What is your street's name?");
-    console.log(firstName + lastName + ", " +ageNum + ", lives on" + streetName)
-
+    console.log(firstName + " " + lastName + " lives on " + streetName)
+    
     let ageNum = prompt ("What is your age in years?");
-    console.log(firstName + " " + lastName + "'s age is" + ageNum);
+    console.log(firstName + " " + lastName + "'s age is " + ageNum);
 
+    let message;
+    
       if (ageNum <= 18) {
-        alert = ("Eyy it's lil " + firstName + "ie " + lastName + "-o from the " + streetName + " lids!");
+        message = ("Eyy it's lil " + firstName + "ie " + lastName + "-o from the " + streetName + " lids!");
     } else if (ageNum <= 64) {
-        alert = ("Eyy it's big " + firstName + "ie " + lastName + "-o from the " + streetName + " lids!");
+        message = ("Eyy it's big " + firstName + "ie " + lastName + "-o from the " + streetName + " lids!");
     } else if (ageNum > 65 ) {
-        alert = ("Eyy it's boss " + firstName + "ie " + lastName + "-o from the " + streetName + " lids!");
+        message = ("Eyy it's boss " + firstName + "ie " + lastName + "-o from the " + streetName + " lids!");
     } else {
-        alert = ("Eyy it's that " + firstName + "ie " + lastName + "-o from the " + streetName + " lids!");
+        message = ("Eyy it's that " + firstName + "ie " + lastName + "-o from the " + streetName + " lids!");
     }
-  }
+alert(message);
 </script>
   <footer></footer>
 </body>
