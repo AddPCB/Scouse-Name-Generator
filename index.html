@@ -11,7 +11,7 @@
     margin:0;
     padding:0;
     }
-  h1.main {
+  main h1 {
     background-color:midnightblue;
     color:silver;
   }
@@ -41,13 +41,13 @@
     let firstName = prompt ("What is your first name?");
     console.log("The user's first name is " + firstName);
 
-    let lastName = prompt ("What is your second name?");
+    let lastName = prompt (firstName + ", What is your second name?");
     console.log("The user's full name is " + firstName + " " + lastName);
 
-    let streetName = prompt ("What is your street's name?");
+    let streetName = prompt (firstName + " " + lastName + ", What is your street's name?");
     console.log(firstName + " " + lastName + " lives on " + streetName)
     
-    let ageNum = prompt ("What is your age in years?");
+    let ageNum = prompt (firstName + " " + lastName + " of " + streetName + ", What is your age in years?");
     console.log(firstName + " " + lastName + "'s age is " + ageNum);
 
     let message;
@@ -62,6 +62,7 @@
         message = ("Eyy it's that " + firstName + "ie " + lastName + "-o from the " + streetName + " lids!");
     }
 alert(message);
+console.log(message);
 </script>
   <footer></footer>
 </body>
