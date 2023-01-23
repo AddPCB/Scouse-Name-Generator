@@ -1,1 +1,66 @@
-# placeholder
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your name in scouse.</title>
+</head>
+<style>
+  body {
+    margin:0;
+    padding:0;
+    }
+  h1.main {
+    background-color:midnightblue;
+    color:silver;
+  }
+</style>
+<body>
+  <header></header>
+  <main>
+    <h1>Class 1 Lab</h1>
+    <p style="background:black;color:white;">
+      What is your first name? 
+      <script>document.write (firstName);</script>
+    </p>
+    <p style="background:#310202;color:#ffe1a1;">What is your second name? 
+      <script>document.write (secondName);</script>
+    </p>
+    <p style="background:#0e2e06;color:#c3f8fc;">
+      What is your street's name?
+      <script>document.write (streetName);</script>
+    </p>
+    <p style="background:#16002b;color:#ffb5ff;">
+      What is your age in years?
+      <script>document.write (secondName);</script>
+    </p>
+  </main>
+  <script>
+    function getScouse() {
+    let firstName = prompt ("What is your first name?");
+    console.log("The user's first name is " + firstName);
+
+    let lastName = prompt ("What is your first name?");
+    console.log("The user's full name is " + firstName + " " + lastName);
+
+    let streetName = prompt ("What is your street's name?");
+    console.log(firstName + lastName + ", " +ageNum + ", lives on" + streetName)
+
+    let ageNum = prompt ("What is your age in years?");
+    console.log(firstName + " " + lastName + "'s age is" + ageNum);
+
+      if (ageNum <= 18) {
+        alert = ("Eyy it's lil " + firstName + "ie " + lastName + "-o from the " + streetName + " lids!");
+    } else if (ageNum <= 64) {
+        alert = ("Eyy it's big " + firstName + "ie " + lastName + "-o from the " + streetName + " lids!");
+    } else if (ageNum > 65 ) {
+        alert = ("Eyy it's boss " + firstName + "ie " + lastName + "-o from the " + streetName + " lids!");
+    } else {
+        alert = ("Eyy it's that " + firstName + "ie " + lastName + "-o from the " + streetName + " lids!");
+    }
+  }
+</script>
+  <footer></footer>
+</body>
+</html>
